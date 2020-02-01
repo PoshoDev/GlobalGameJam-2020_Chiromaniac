@@ -1,0 +1,139 @@
+{
+"skeleton": { "hash": "b2arqdKLjovaW/0374bpzUg4sAg", "spine": "3.4.02", "width": 218.4, "height": 286.2, "images": "" },
+"bones": [
+	{ "name": "root", "x": 19.12, "y": 309.54 },
+	{ "name": "head", "parent": "root", "length": 449.75, "rotation": 93.99, "x": -34.49, "y": -318.51, "scaleX": 0.3, "scaleY": 0.3 },
+	{ "name": "eyebrows", "parent": "head", "length": 86.07, "rotation": -175.86, "x": 563.8, "y": 35.62 },
+	{ "name": "eyes", "parent": "head", "length": 86.33, "rotation": -174.71, "x": 401.13, "y": 27.79 },
+	{ "name": "mouth", "parent": "head", "length": 80.16, "rotation": 179.74, "x": 180.61, "y": 15.29 },
+	{ "name": "nose", "parent": "head", "length": 111.78, "rotation": -178.63, "x": 382.82, "y": 15.12 }
+],
+"slots": [
+	{ "name": "Textures/rebo_head", "bone": "head", "attachment": "Textures/rebo_head" },
+	{ "name": "Textures/rebo_eyebrows", "bone": "eyebrows", "attachment": "Textures/rebo_eyebrows" },
+	{ "name": "Textures/rebo_eyes", "bone": "eyes", "attachment": "Textures/rebo_eyes" },
+	{ "name": "Textures/rebo_mouth", "bone": "mouth", "attachment": "Textures/rebo_mouth" },
+	{ "name": "Textures/rebo_nose", "bone": "nose", "attachment": "Textures/rebo_nose" },
+	{ "name": "Textures/scream_1", "bone": "nose" }
+],
+"skins": {
+	"default": {
+		"Textures/rebo_eyebrows": {
+			"Textures/rebo_eyebrows": { "x": 27.2, "y": 3.45, "rotation": 81.86, "width": 373, "height": 173 }
+		},
+		"Textures/rebo_eyes": {
+			"Textures/rebo_eyes": { "x": 18.79, "y": 5.17, "rotation": 80.72, "width": 435, "height": 196 }
+		},
+		"Textures/rebo_head": {
+			"Textures/rebo_head": { "x": 401.03, "y": -49.52, "rotation": -93.99, "width": 728, "height": 954 }
+		},
+		"Textures/rebo_mouth": {
+			"Textures/rebo_mouth": { "x": -3.52, "y": 13.57, "rotation": 86.26, "width": 319, "height": 270 }
+		},
+		"Textures/rebo_nose": {
+			"Textures/rebo_nose": { "x": 56.25, "y": -14.08, "rotation": 84.64, "width": 88, "height": 144 }
+		},
+		"Textures/scream_1": {
+			"Textures/scream_1": { "x": 113.42, "y": -18.26, "rotation": 84.64, "width": 461, "height": 390 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.532, 0, 0.413, 0.99 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 23.2,
+						"curve": [ 0.532, 0, 0.413, 0.99 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": 0,
+						"curve": [ 0.532, 0, 0.413, 0.99 ]
+					},
+					{
+						"time": 1,
+						"angle": -28.1,
+						"curve": [ 0.532, 0, 0.413, 0.99 ]
+					},
+					{ "time": 1.3333, "angle": 0 }
+				]
+			}
+		}
+	},
+	"scream_1": {
+		"slots": {
+			"Textures/rebo_eyebrows": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Textures/rebo_eyes": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Textures/rebo_mouth": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Textures/rebo_nose": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Textures/scream_1": {
+				"attachment": [
+					{ "time": 0, "name": "Textures/scream_1" }
+				]
+			}
+		},
+		"bones": {
+			"nose": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.532, 0, 1, 0.4 ]
+					},
+					{
+						"time": 0.0333,
+						"x": -32.46,
+						"y": 0.35,
+						"curve": [ 0.532, 0, 1, 0.4 ]
+					},
+					{
+						"time": 0.0666,
+						"x": -12.47,
+						"y": -14.42,
+						"curve": [ 0.532, 0, 1, 0.4 ]
+					},
+					{ "time": 0.1, "x": 0.53, "y": 7.6 }
+				]
+			},
+			"head": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0333, "x": 8, "y": 5.72 },
+					{ "time": 0.0666, "x": -3.43, "y": -5.72 },
+					{ "time": 0.1, "x": 17.73, "y": -3.43 }
+				]
+			}
+		}
+	}
+}
+}

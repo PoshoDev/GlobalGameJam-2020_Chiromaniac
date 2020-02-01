@@ -10,6 +10,7 @@ if (type==typ.joint || type==typ.last)
 switch(type)
 {
     case typ.first:     var str = "(first)";    break;
+    case typ.second:    var str = "(second)";   break;
     case typ.joint:     var str = "(joint)";    break;
     case typ.last:      var str = "(last)";     break;
 }

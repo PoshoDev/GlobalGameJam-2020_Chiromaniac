@@ -2,17 +2,19 @@ var type = argument0;
 var section = argument1;
 var total = argument2;
 
-var px;
-var py;
-var dir;
+px = -1;
+py = -1;
+dir = -1;
 
-var torso_len = 400;
-var extremity_len = 300;
+torso_len = 150;
+extremity_len = 100;
 
 if (type == total-1)
     type = typ.last;
 else if (type == 0)
     type = typ.first;
+else if (type == 1)
+    type = typ.second;
 
 
 
@@ -40,8 +42,8 @@ switch(section)
             break;
             
             default:
-                px = irandom_range(0, room_width)
-                py = irandom_range(0, room_height)
+                px = irandom_range(global.pos_top_x-100, global.pos_top_x+100)
+                py = irandom_range(global.pos_top_y+64, global.pos_top_y+64+100)
             break;
         }
     break;
@@ -54,15 +56,8 @@ switch(section)
                 py = global.pos_top_y;
             break;
             
-            case typ.last:
-                dir = irandom_range(90, 180);
-                px = global.pos_top_x + lengthdir_x(torso_len, dir);
-                py = global.pos_top_y + lengthdir_y(torso_len, dir);
-            break;
-            
             default:
-                px = irandom_range(0, room_width)
-                py = irandom_range(0, room_height)
+                joint_set_point(type, 180-60, 270-60);
             break;
         }
     break;
@@ -75,15 +70,8 @@ switch(section)
                 py = global.pos_top_y;
             break;
             
-            case typ.last:
-                dir = irandom_range(0, 90);
-                px = global.pos_top_x + lengthdir_x(torso_len, dir);
-                py = global.pos_top_y + lengthdir_y(torso_len, dir);
-            break;
-            
             default:
-                px = irandom_range(0, room_width)
-                py = irandom_range(0, room_height)
+                joint_set_point(type, 270+60, 360+60);
             break;
         }
     break;
@@ -96,15 +84,8 @@ switch(section)
                 py = global.pos_bot_y;
             break;
             
-            case typ.last:
-                dir = irandom_range(180, 270);
-                px = global.pos_bot_x + lengthdir_x(torso_len, dir);
-                py = global.pos_bot_y + lengthdir_y(torso_len, dir);
-            break;
-            
             default:
-                px = irandom_range(0, room_width)
-                py = irandom_range(0, room_height)
+                joint_set_point(type, 180, 270);
             break;
         }
     break;
@@ -117,15 +98,8 @@ switch(section)
                 py = global.pos_bot_y;
             break;
             
-            case typ.last:
-                dir = irandom_range(270, 360);
-                px = global.pos_bot_x + lengthdir_x(torso_len, dir);
-                py = global.pos_bot_y + lengthdir_y(torso_len, dir);
-            break;
-            
             default:
-                px = irandom_range(0, room_width)
-                py = irandom_range(0, room_height)
+                joint_set_point(type, 270, 360);
             break;
         }
     break;
@@ -136,7 +110,11 @@ switch(section)
     break;
 }
 
-var lol = instance_create_depth(px, py, depth, obj_joint);
+global.prev_x = px;
+global.prev_y = py;
+global.prev_dir = dir;
+
+var lol = instance_create_depth(px, py, depth+1, obj_joint);
 
 lol.section = section;
 lol.image_index = section;

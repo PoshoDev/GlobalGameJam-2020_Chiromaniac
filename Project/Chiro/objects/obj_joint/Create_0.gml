@@ -1,6 +1,6 @@
 
 enum sec { torso, arm_l, arm_r, leg_l, leg_r, LENGTH};
-enum typ { first, joint, last, unset};
+enum typ { first, second, joint, last, unset};
 
 image_speed = 0;
 
