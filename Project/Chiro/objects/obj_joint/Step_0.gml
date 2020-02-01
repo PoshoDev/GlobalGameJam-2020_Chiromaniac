@@ -1,4 +1,17 @@
 
+if (type == typ.unset)
+{
+    if (parent != noone)
+    {
+        if (child != noone)
+           type = typ.joint;
+        else
+            type = typ.last;
+    }
+    else
+        type = typ.first;
+}
+
 if (parent != noone)
 {
     sprite_index = sprite01;

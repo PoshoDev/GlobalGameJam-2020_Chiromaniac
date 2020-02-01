@@ -1,4 +1,9 @@
 
+enum sec { torso, arm_l, arm_r, leg_l, leg_r, LENGTH};
+enum typ { first, joint, last, unset};
+
+image_speed = 0;
+
 // Animation Initials
 anim_doing = false;
 anim_x = x;

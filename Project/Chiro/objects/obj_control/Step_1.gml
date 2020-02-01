@@ -14,7 +14,14 @@ else if (mouse_check_button_released(mb_left))
     
     if (colliding)
     {
-        var touch = instance_nearest(to_x, to_y, obj_joint);
+        //var touch = instance_nearest(to_x, to_y, obj_joint);
+        for (var n=0; n<instance_number(obj_joint); n++)
+        {
+            var touch = joint_find_nearest(to_x, to_y);
+            
+            if (touch.type == typ.joint)
+                break;
+        }
         
         touch.anim_x += lengthdir_x(strength, direction);
         touch.anim_y += lengthdir_y(strength, direction);
@@ -45,4 +52,3 @@ if (charging)
     else
         colliding = false;
 }
-    

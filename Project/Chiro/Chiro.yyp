@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3cae6397-ba69-cada-1e9f-c8f691bb9100",
+            "Value": {
+                "id": "744434ab-f306-fbb5-13f6-305dfb54a355",
+                "resourcePath": "scripts\/joint_find_nearest\/joint_find_nearest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f2bfdb8-1bce-4f55-a5b0-7677f03577f7",
             "Value": {
                 "id": "44dab3e7-5df0-4e41-8034-9b5af84920fe",
@@ -143,11 +151,27 @@
             }
         },
         {
+            "Key": "9c718ccb-59cd-1dbf-f28e-8d72a2a2ae23",
+            "Value": {
+                "id": "1a9e0e8d-93fe-d199-9746-9fc05dcc974e",
+                "resourcePath": "scripts\\joint_make\\joint_make.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "e3499d67-4d62-40ad-ab61-782cd2ae1a4d",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a1cb3dfa-b6e4-07b8-4a34-d44ab54878a4",
+            "Value": {
+                "id": "06ff2747-722b-c710-990a-a9772adc98db",
+                "resourcePath": "scripts\\instance_nth_nearest\\instance_nth_nearest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -256,7 +280,9 @@
         }
     ],
     "script_order": [
-        
+        "a1cb3dfa-b6e4-07b8-4a34-d44ab54878a4",
+        "3cae6397-ba69-cada-1e9f-c8f691bb9100",
+        "9c718ccb-59cd-1dbf-f28e-8d72a2a2ae23"
     ],
     "tutorial": ""
 }
