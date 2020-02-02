@@ -1,17 +1,6 @@
 
 // Draw the sprites
-if (false)
-{
-    var path = path_add();
-    for(var i=0; i<global.total; i++)
-    {
-        var lal = instance_find(obj_joint, i)
-        path_add_point(path, lal.x, lal.y, 0)
-    }
-    path_set_closed(path, false)
-    
-    draw_path_sprite(path, 0, 0, 64, sprite2, 0, 1, 1, image_blend, image_alpha, 64, false)
-}
+joints_draw();
 
 //
 if (charging)
@@ -28,6 +17,8 @@ if (charging)
     
     draw_set_color(c_white);
 }
+
+draw_joints_debug();
 
 if (keyboard_check_pressed(vk_space))
 {

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0fe05999-3f4e-4790-987a-02bb2b6a8c37",
+            "Value": {
+                "id": "d14460e4-3e74-4d26-beac-8484c59dd0fe",
+                "resourcePath": "sprites\\spr_shirt_sleeve\\spr_shirt_sleeve.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1bea21a3-589a-46a5-af6d-33e22be3cb9a",
             "Value": {
                 "id": "c50690de-2ecd-4224-b4cd-c1afce0eee1b",
@@ -47,11 +55,27 @@
             }
         },
         {
+            "Key": "1c201e51-9e8e-bf44-e04b-2662bf777870",
+            "Value": {
+                "id": "1225edda-d16b-e9e9-328e-7979e60e35b9",
+                "resourcePath": "scripts\\joint_draw_extremity_first\\joint_draw_extremity_first.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1ecd430e-50a1-4ecd-bc6f-a42fbb497899",
             "Value": {
                 "id": "7ca6ecbc-619b-42eb-81fa-1dddf843da85",
                 "resourcePath": "views\\1ecd430e-50a1-4ecd-bc6f-a42fbb497899.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "21b97d80-8120-4fb7-972b-ef88b9c86bf5",
+            "Value": {
+                "id": "7adcb48a-d195-4276-a1f0-1b232d9c8150",
+                "resourcePath": "sprites\\spr_hand_1\\spr_hand_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -95,6 +119,14 @@
             }
         },
         {
+            "Key": "282707c3-54bf-5a73-0f84-84d3929a8d36",
+            "Value": {
+                "id": "bb6de2df-4f82-8d89-5481-d9759fd77f97",
+                "resourcePath": "scripts\\joints_draw\\joints_draw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2da242cc-587a-4884-be0b-9c168798e00a",
             "Value": {
                 "id": "8717947d-4581-49f5-b9b5-fd0ba0cd4186",
@@ -132,6 +164,14 @@
                 "id": "ae9d5cdf-70a3-40bc-bbaa-2a3a9c51857b",
                 "resourcePath": "views\\48ed16cc-56ca-483c-992a-a3b93e54bc8c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e9bc0a2-3b15-4dc3-9ebf-990bf33dca6a",
+            "Value": {
+                "id": "afbb9871-5a39-46c1-bc71-8f41c97d0120",
+                "resourcePath": "sprites\\spr_pants_hole\\spr_pants_hole.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -175,6 +215,14 @@
             }
         },
         {
+            "Key": "9f354537-21bf-1757-8a63-43a8894e22d9",
+            "Value": {
+                "id": "ce948e90-692e-e71a-36a7-0d2f678db8d3",
+                "resourcePath": "scripts\\draw_joints_debug\\draw_joints_debug.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a02ed327-1601-18e5-5db3-a876a48ddc7f",
             "Value": {
                 "id": "adc1df83-d960-784a-efcf-6c1629ddd381",
@@ -204,6 +252,14 @@
                 "id": "92191fab-4bed-7d83-2115-3d2cdc817941",
                 "resourcePath": "scripts\\draw_path_sprite\\draw_path_sprite.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a7417f7e-c823-43ec-be19-f3a355aae8df",
+            "Value": {
+                "id": "0007c0b4-5a3b-4f30-9929-136d8e84e177",
+                "resourcePath": "sprites\\spr_pants\\spr_pants.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -263,11 +319,35 @@
             }
         },
         {
+            "Key": "d77591aa-35c2-4548-870e-c1c8d816b4ec",
+            "Value": {
+                "id": "93b8cd34-25bd-4673-8d96-ad0b25de8621",
+                "resourcePath": "sprites\\spr_extremity\\spr_extremity.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d7a0d075-a55e-6920-b0a8-88e9bce2380e",
             "Value": {
                 "id": "459e2117-01d9-23b9-b5e2-b7f922032e4e",
                 "resourcePath": "scripts\\raycast_coord\\raycast_coord.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dba28f3b-2369-44e1-87c0-b4f449e2726b",
+            "Value": {
+                "id": "c64a0680-c695-492a-a115-98e3851437b8",
+                "resourcePath": "sprites\\spr_shirt\\spr_shirt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dcf24821-40f1-4cb5-9b45-af8326e4bdba",
+            "Value": {
+                "id": "fc5db998-6675-4305-bd82-29e9d23a1bd7",
+                "resourcePath": "sprites\\spr_shoe\\spr_shoe.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -295,6 +375,14 @@
             }
         },
         {
+            "Key": "f20dcf02-0778-8b6d-7dda-1caae2f366e4",
+            "Value": {
+                "id": "cdd9068d-7e10-4a96-245d-5a101bebdb34",
+                "resourcePath": "scripts\\joint_draw_extremity_end\\joint_draw_extremity_end.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f334902c-b8c7-4d44-b508-e346332f8251",
             "Value": {
                 "id": "56ec495e-3261-4869-8e3c-495461a3e164",
@@ -316,6 +404,14 @@
                 "id": "1bf62b11-bd65-4e26-a6af-774495c73d4c",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f43885a2-34f3-4f2b-b40f-e2452dbcbf7d",
+            "Value": {
+                "id": "eeff709e-e546-4cd8-9341-8085d7b03fe6",
+                "resourcePath": "sprites\\spr_hand_2\\spr_hand_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -341,7 +437,11 @@
         "9c718ccb-59cd-1dbf-f28e-8d72a2a2ae23",
         "a49b1962-0452-96a3-e01e-7f170f1836b5",
         "a02ed327-1601-18e5-5db3-a876a48ddc7f",
-        "d7a0d075-a55e-6920-b0a8-88e9bce2380e"
+        "d7a0d075-a55e-6920-b0a8-88e9bce2380e",
+        "282707c3-54bf-5a73-0f84-84d3929a8d36",
+        "f20dcf02-0778-8b6d-7dda-1caae2f366e4",
+        "1c201e51-9e8e-bf44-e04b-2662bf777870",
+        "9f354537-21bf-1757-8a63-43a8894e22d9"
     ],
     "tutorial": ""
 }

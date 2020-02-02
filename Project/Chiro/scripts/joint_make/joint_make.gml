@@ -6,7 +6,7 @@ px = -1;
 py = -1;
 dir = -1;
 
-torso_len = 150;
+torso_len = 200;
 extremity_len = 100;
 
 if (type == total-1)
@@ -66,7 +66,7 @@ switch(section)
         switch(type)
         {
             case typ.first:
-                px = global.pos_top_x;
+                px = global.pos_top_x + 64;
                 py = global.pos_top_y;
             break;
             
@@ -118,5 +118,7 @@ var lol = instance_create_depth(px, py, depth+1, obj_joint);
 
 lol.section = section;
 lol.image_index = section;
+
+global.joints[argument1, argument0] = lol;
 
 return lol;

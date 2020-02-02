@@ -11,7 +11,7 @@ for (var i=0; i<sec.LENGTH; i++)
     var par = noone;
     
     if (i == sec.torso)
-        var tot = 3;
+        var tot = 2;
     else
         var tot = global.total;
         
@@ -35,7 +35,6 @@ for (var i=0; i<sec.LENGTH; i++)
 
 instance_create_depth(global.pos_top_x, global.pos_top_y, depth+1, obj_face);
 
-
 // Initials
 charging = false;
 charge_max = 256;
@@ -49,6 +48,8 @@ coords[0] = -1;
 coords[1] = -1;
 
 lel = noone;
+
+global.holup = false;
 
 // Cameras
 zoom_level = 1;
