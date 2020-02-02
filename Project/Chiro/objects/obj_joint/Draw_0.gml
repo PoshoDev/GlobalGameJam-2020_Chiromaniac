@@ -19,4 +19,3 @@ if (false)
     
     draw_text(x, y, str);
 }
-

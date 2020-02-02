@@ -1,0 +1,1 @@
+return round(argument0 / room_speed/** global.delta*/);

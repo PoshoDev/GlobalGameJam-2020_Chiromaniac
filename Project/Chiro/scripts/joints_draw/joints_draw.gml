@@ -1,4 +1,4 @@
-for (var i=0; i<array_height_2d(global.joints); i++)
+for (var i=1; i<array_height_2d(global.joints); i++)
 {
     var path = path_add();
     

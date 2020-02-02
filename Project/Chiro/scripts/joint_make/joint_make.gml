@@ -52,8 +52,8 @@ switch(section)
         switch(type)
         {
             case typ.first:
-                px = global.pos_top_x;
-                py = global.pos_top_y;
+                px = global.pos_top_x - 64;
+                py = global.pos_top_y + 32;
             break;
             
             default:
@@ -67,7 +67,7 @@ switch(section)
         {
             case typ.first:
                 px = global.pos_top_x + 64;
-                py = global.pos_top_y;
+                py = global.pos_top_y + 32;
             break;
             
             default:
@@ -80,8 +80,8 @@ switch(section)
         switch(type)
         {
             case typ.first:
-                px = global.pos_bot_x;
-                py = global.pos_bot_y;
+                px = global.pos_bot_x - 32 + 8;
+                py = global.pos_bot_y + 32;
             break;
             
             default:
@@ -94,8 +94,8 @@ switch(section)
         switch(type)
         {
             case typ.first:
-                px = global.pos_bot_x;
-                py = global.pos_bot_y;
+                px = global.pos_bot_x + 32 + 8;
+                py = global.pos_bot_y + 32;
             break;
             
             default:

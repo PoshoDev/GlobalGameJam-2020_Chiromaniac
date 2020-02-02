@@ -29,3 +29,22 @@ if (anim_doing)
     x += anim_hsp;
     y += anim_vsp;
 }
+/*else
+{
+    if (type!=typ.last && type!=typ.first)
+    {
+        move_circular(x, y, 16, 2);
+    }
+}*/
+
+if (!global.gameover)
+    goals_check();
+else
+{
+    if (type != typ.first)
+    {
+        var off = 100;
+        x = irandom_range(xstart-off, xstart+off);
+        y = irandom_range(ystart-off, ystart+off);
+    }
+}

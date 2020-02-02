@@ -22,3 +22,17 @@ var vpos_y = camera_get_view_y(view_camera[0]);
 //change coordinates of camera so zoom is centered
 var new_x = lerp(vpos_x,vpos_x+(view_w - zoom_level * default_zoom_width)/2, rate);
 var new_y = lerp(vpos_y,vpos_y+(view_h - zoom_level * default_zoom_height)/2, rate);
+
+
+
+// Screenshakalaka
+
+if (global.holup)
+    var plus = 8;
+else
+    var plus = 0;
+
+var add_x = irandom_range(-plus, plus);
+var add_y = irandom_range(-plus, plus);
+
+camera_set_view_pos(view_camera[0], 240+add_x, 135+add_y);

@@ -1,3 +1,4 @@
+/// @param joint_section
 var joint_section = argument0;
 
 var last = array_length_2d(global.joints, joint_section) - 1;
@@ -12,7 +13,9 @@ var flip = 1;
 switch(joint_section)
 {
     case 1:
-        if (global.holup)
+        if (global.okaying == -1)
+            spr = spr_hand_3;
+        else if (global.holup)
             spr = spr_hand_2;
         else
             spr = spr_hand_1;
@@ -22,7 +25,9 @@ switch(joint_section)
     break;
     
     case 2:
-        if (global.holup)
+        if (global.okaying == -1)
+            spr = spr_hand_3;
+        else if (global.holup)
             spr = spr_hand_2;
         else
             spr = spr_hand_1;

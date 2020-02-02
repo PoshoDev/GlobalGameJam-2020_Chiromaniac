@@ -10,13 +10,17 @@ var qua = argument5; // 1 is most precise, but slowest
 var found = false;
 var dir = point_direction(x1, y1, x2, y2);
 
+var xp = x1;
+var yp = y1;
+
+
 while (point_distance(x1, y1, x2, y2) > qua)
 {
     if (collision_point(x1, y1, obj, true, true))
         break;
     
-    var xp = x1;
-    var yp = y1;
+    xp = x1;
+    yp = y1;
     
     x1 += lengthdir_x(qua, dir);
     y1 += lengthdir_y(qua, dir);

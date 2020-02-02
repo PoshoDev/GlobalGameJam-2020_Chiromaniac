@@ -1,14 +1,25 @@
 
+delta_update();
+
+if (!global.ending && doing!=0)
+    timer_deplete_all();
+
 if (keyboard_check(ord("R")))
     game_restart();
     
-if (mouse_check_button_pressed(mb_left))
+if (keyboard_check_pressed(ord("T")))
+{
+    global.joint_number++;
+    room_restart();
+}
+    
+if (mouse_check_button_pressed(mb_left) && !global.gameover)
 {
     charging = true;
     charge_x = mouse_x;
     charge_y = mouse_y;
 }
-else if (mouse_check_button_released(mb_left))
+else if (mouse_check_button_released(mb_left) && !global.gameover)
 {
     charging = false;
     
@@ -31,9 +42,13 @@ else if (mouse_check_button_released(mb_left))
         global.holup = true;
     
         with (obj_face)
-            skeleton_animation_set("scream_1");
+            skeleton_animation_set(choose("scream_1", "scream_2", "scream_3"));
         
         alarm[0] = room_speed;
+        
+        play(snd.scream);
+        play(snd.crack);
+        play(snd.punch);
     }
 }
 
@@ -63,6 +78,7 @@ if (charging)
         colliding = false;
 }
 
+goals_compare();
 
 if(keyboard_check_pressed(vk_space))
 {

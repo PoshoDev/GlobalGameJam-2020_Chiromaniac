@@ -12,3 +12,5 @@ anim_hsp = 0;
 anim_vsp = 0;
 anim_spd = 0.5;
 anim_t = 0.2;
+
+goal_dist = -1;

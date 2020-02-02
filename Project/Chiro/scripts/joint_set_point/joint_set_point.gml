@@ -1,6 +1,8 @@
 var dmin = argument1;
 var dmax = argument2;
 
+var threshold = 60;
+
 if (argument0 != typ.last)
 {
     if (argument0 == typ.second)
@@ -10,7 +12,7 @@ if (argument0 != typ.last)
     
     do
     {
-        dir = irandom_range(dmin-(45*extra), dmax+(45*extra));
+        dir = irandom_range(dmin-(threshold*extra), dmax+(threshold*extra));
     }
     until (!extra || (dir>global.prev_dir+60 && dir<global.prev_dir+120) || (dir<global.prev_dir-60 && dir>global.prev_dir-120) )
     
