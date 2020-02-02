@@ -15,3 +15,6 @@ if (audio_is_playing(snd_calm))
     
 if (!audio_is_playing(snd_menu))
     audio_play_sound(snd_menu, irandom_range(0, 99), false);
+
+add = 0;
+title_y = 0;

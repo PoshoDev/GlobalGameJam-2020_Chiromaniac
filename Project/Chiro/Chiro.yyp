@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1c43f1c8-8b85-473a-bf9f-42f2de5e5e68",
+            "Value": {
+                "id": "c31cf05a-c3fe-414b-a1c8-8de72c758446",
+                "resourcePath": "sprites\\spr_hand_4\\spr_hand_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cb7f305-c96c-f4d1-c7e6-d511e9c88c93",
             "Value": {
                 "id": "7419e150-ed48-859e-fde6-6c604a112522",

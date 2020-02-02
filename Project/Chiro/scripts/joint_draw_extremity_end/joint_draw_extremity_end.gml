@@ -17,6 +17,8 @@ switch(joint_section)
             spr = spr_hand_3;
         else if (global.holup)
             spr = spr_hand_2;
+        else if (global.ending)
+            spr = spr_hand_4;
         else
             spr = spr_hand_1;
             
@@ -29,6 +31,8 @@ switch(joint_section)
             spr = spr_hand_3;
         else if (global.holup)
             spr = spr_hand_2;
+        else if (global.ending)
+            spr = spr_hand_4;
         else
             spr = spr_hand_1;
             

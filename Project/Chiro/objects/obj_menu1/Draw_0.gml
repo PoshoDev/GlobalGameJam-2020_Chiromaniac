@@ -44,4 +44,8 @@ if (menu_option != op.none)
     }
 }
 
-draw_sprite_ext(spr_title, 0, room_width*0.7, room_height/2, 1, 1, image_angle, image_blend, image_alpha);
+add++;
+title_y = room_height/2 + cos(add/120)*200;
+var angle = cos(add/45)*30;
+
+draw_sprite_ext(spr_title, 0, room_width*0.7, title_y, 1, 1, angle, image_blend, image_alpha);
